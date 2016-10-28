@@ -1,4 +1,4 @@
-manojpandey.github.io
+manojpandey.me
 =====================
 
 Homepage of Manoj Pandey
