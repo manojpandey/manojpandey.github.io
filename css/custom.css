@@ -6,6 +6,10 @@ body {
     width: 100%;
 }
 
+container {
+    margin-top: 20px;
+}
+
 h3 {
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
@@ -68,7 +72,7 @@ h3 {
 @media (max-width: 768px) {
     .header {
         /*background: url(../img/bg.jpg) no-repeat center center scroll;*/
-        background-image: linear-gradient(230deg, #4bcf93, #4bcfb7, #a24bcf);
+        background-image: linear-gradient(230deg, #ff0000, #69b3c3, #a24bcf);
         background-size: 400% 400%;
     }
 }
