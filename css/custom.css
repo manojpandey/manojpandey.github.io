@@ -4,22 +4,15 @@ html,
 body {
     height: 100%;
     width: 100%;
+    font-size: 17px;
+    font-family: 'Press Start 2P', 'Avenir', cursive;
 }
 
-container {
-    margin-top: 20px;
-}
-
-body {
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-}
-
-.dp {
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    margin-top: -60px;
+.header {
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 
 .vert-text {
@@ -29,80 +22,41 @@ body {
     padding-top: 25px;
 }
 
-.vert-text h1 {
-    padding: 0;
-    margin: 0;
-    font-size: 4.5em;
-    font-weight: 700;
+.dp {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin-bottom: 20px;
 }
 
-
-/* Full Page Image Header Area */
-
-.header {
-    display: table;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    /*background: url(../img/bg.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;*/
-    /*background-size: cover;*/
-    /*background-image: linear-gradient(230deg, #4bcf93, #4bcfb7, #a24bcf);*/
-    /*background-size: 400% 400%;*/
+@media all and (min-width: 2560px) {
+    body {
+        font-size: 40px;
+    }
+    .dp {
+        height: 300px;
+        width: 300px;
+    }
 }
 
-
-/* Intro */
-
-.intro {
-    padding: 50px 0;
+@media all and (max-width: 600px) {
+    body {
+        font-size: 11px;
+        padding: 20px 20px;
+    }
+    .dp {
+        height: 150px;
+        width: 150px;
+    }
 }
 
-#arraytext {
-    font-size: 25px;
-    font-family: 'Raleway', sans-serif;
-}
-
-
-/*on hover -> raise effect*/
-
-.hvr-float-shadow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-}
-
-[class^="hvr-"] {
-    margin: .4em;
-    padding: 1em;
-    cursor: default;
-    background: #e1e1e1;
-    text-decoration: none;
-    color: #666;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.hvr-float-shadow:hover,
-.hvr-float-shadow:focus,
-.hvr-float-shadow:active {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-}
-
-a:hover,
-a:focus {
-    color: #23527c;
-    text-decoration: none;
+@media all and (max-width: 320px) {
+    body {
+        font-size: 10px;
+        padding: 20px 20px;
+    }
+    .dp {
+        height: 150px;
+        width: 150px;
+    }
 }
